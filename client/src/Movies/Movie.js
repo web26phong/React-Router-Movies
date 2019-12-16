@@ -36,10 +36,10 @@ const Movie = (props) => {
   
   return (
     <div className="save-wrapper">
-      {MovieCard(movie)};
+      {MovieCard(movie)}
       <div className="save-button">Save</div>
     </div>
   );
-}
+};
 
 export default Movie;
