@@ -6,7 +6,7 @@ import MovieCard from "./MovieCard";
 const Movie = (props) => {
   const [movie, setMovie] = useState();
   const {id} = useParams();
-  console.log(id);
+  console.log("This is the param in movie.js", id);
  
   useEffect(() => {
     // const id = 1;
@@ -36,7 +36,8 @@ const Movie = (props) => {
   
   return (
     <div className="save-wrapper">
-      {MovieCard(movie)}
+      {/* {MovieCard(movie)} */}
+      <MovieCard key={movie.id} id={movie.id} title={movie.title} director={movie.director} metascore={movie.metascore} stars={movie.stars}/>
       <div className="save-button">Save</div>
     </div>
   );
