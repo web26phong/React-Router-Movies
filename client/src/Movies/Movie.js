@@ -6,7 +6,6 @@ import MovieCard from "./MovieCard";
 const Movie = (props) => {
   const [movie, setMovie] = useState();
   const {id} = useParams();
-  console.log("This is the param in movie.js", id);
  
   useEffect(() => {
     // const id = 1;

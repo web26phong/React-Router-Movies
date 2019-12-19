@@ -7,7 +7,6 @@ const MovieCard = props => {
   const director = props.director;
   const metascore = props.metascore;
   const stars = props.stars;
-  console.log(id);
   return (
       <div className="movie-card">
         <h2>{title}</h2>
